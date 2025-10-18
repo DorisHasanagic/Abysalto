@@ -28,6 +28,7 @@ public class RandomGenerator {
     public String getEmail() {
         return email;
     }
+
     public int getDay() {
         return day;
     }

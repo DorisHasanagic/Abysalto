@@ -46,8 +46,10 @@ public class BasePage {
         waitToBeClickable(locator).click();
     }
 
-    protected void selectFromDropdown(By locator, String value){
+    protected void selectFromDropdown(By wrapper, By locator, String value){
         try {
+        wait.until(ExpectedConditions.visibilityOfElementLocated(wrapper));
+        click(wrapper);
         wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
         scrollToElement(locator);
         WebElement element = waitToBeVisible(locator);

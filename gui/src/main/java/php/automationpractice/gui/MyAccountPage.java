@@ -13,7 +13,7 @@ public class MyAccountPage extends BasePage{
     }
 
     public boolean isProductHeaderDisplayed(){
-        WebElement header = find(myAccountHeader);
-        return header.isDisplayed() && header.getText().equals("My account");
+        WebElement h1 = find(myAccountHeader);
+        return h1.isDisplayed() && h1.getText().trim().equalsIgnoreCase("My account");
     }
 }

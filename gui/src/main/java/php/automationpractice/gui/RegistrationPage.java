@@ -12,8 +12,10 @@ public class RegistrationPage extends BasePage{
     private By titleRadioButtonMrs = By.id("id_gender2");
     private By firstNameField = By.id("customer_firstname");
     private By lastNameField = By.id("customer_lastname");
-    private By emailField = By.id("email");
     private By passwordField = By.id("passwd");
+    private By dayWrapper = By.id("uniform-days");
+    private By monthWrapper = By.id("uniform-months");
+    private By yearWrapper = By.id("uniform-years");
     private By dateOfBirthDayDDM = By.id("uniform-days");
     private By dateOfBirthMonthDDM = By.id("months");
     private By dateOfBirthYearDDM = By.id("years");
@@ -55,13 +57,13 @@ public class RegistrationPage extends BasePage{
 //       select.selectByValue(String.valueOf(month));
 
     public void selectDay(int day){
-        selectFromDropdown(dateOfBirthDayDDM, String.valueOf(day));
+        selectFromDropdown(dayWrapper, dateOfBirthDayDDM, String.valueOf(day));
     }
     public void selectMonth(int month) {
-        selectFromDropdown(dateOfBirthMonthDDM, String.valueOf(month));
+        selectFromDropdown(monthWrapper, dateOfBirthMonthDDM, String.valueOf(month));
     }
     public void selectYear(int year) {
-        selectFromDropdown(dateOfBirthYearDDM, String.valueOf(year));
+        selectFromDropdown(yearWrapper, dateOfBirthYearDDM, String.valueOf(year));
     }
 
     public void fillTheForm(){
