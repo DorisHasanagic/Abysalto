@@ -19,7 +19,8 @@
    #### Installation
    - Clone the repository
    git https://github.com/DorisHasanagic/Abysalto.git
-   cd Abysalto 
+   
+   - cd Abysalto 
 
    - Install Dependencies
    mvn clean install 
