@@ -16,4 +16,9 @@ public class MyAccountPage extends BasePage{
         WebElement h1 = find(myAccountHeader);
         return h1.isDisplayed() && h1.getText().trim().equalsIgnoreCase("My account");
     }
+
+    public ProductsPage openWomenSection(){
+        click(womenSection);
+        return new ProductsPage(driver);
+    }
 }
