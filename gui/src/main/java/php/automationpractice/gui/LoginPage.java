@@ -2,9 +2,10 @@ package php.automationpractice.gui;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import php.automationpractice.core.commonmethods.PageActions;
 
 //LoginPage predstavlja login stranicu s metodama specifičnim za login (setUsername, setPassword, clickLoginbutton).
-public class LoginPage extends BasePage{
+public class LoginPage extends PageActions {
     private By emailInput = By.id("email_create");
     private By createAccount = By.id("SubmitCreate");          // By predstavlja tip, isto kao da pise int x;
 

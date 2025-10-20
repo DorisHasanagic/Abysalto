@@ -1,5 +1,6 @@
 package base;
 
+import php.automationpractice.core.commonmethods.PageActions;
 import php.automationpractice.core.utility.UserDataStorage;
 import php.automationpractice.gui.*;
 import org.openqa.selenium.WebDriver;
@@ -9,7 +10,7 @@ import org.testng.annotations.BeforeClass;
 
 public class BaseTest {
     protected WebDriver driver;
-    protected BasePage basePage;
+    protected PageActions pageActions;
     protected HomePage homepage;
     protected LoginPage loginPage;
     protected RegistrationPage registrationPage;
@@ -23,7 +24,7 @@ public class BaseTest {
         driver.manage().window().maximize();
         driver.get(url);                    //loadanje aplikacije
 
-        basePage = new BasePage(driver);          
+        pageActions = new PageActions(driver);
         homepage = new HomePage(driver);
         loginPage = new LoginPage(driver);
         registrationPage = new RegistrationPage(driver);

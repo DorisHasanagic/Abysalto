@@ -5,10 +5,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 import org.openqa.selenium.WebDriver;
+import php.automationpractice.core.commonmethods.PageActions;
 import php.automationpractice.core.randomgenerator.RandomGenerator;
 import php.automationpractice.core.utility.UserDataStorage;
 
-public class RegistrationPage extends BasePage{
+public class RegistrationPage extends PageActions {
     private By titleRadioButtonMr = By.id("id_gender1");
     private By titleRadioButtonMrs = By.id("id_gender2");
     private By firstNameField = By.id("customer_firstname");

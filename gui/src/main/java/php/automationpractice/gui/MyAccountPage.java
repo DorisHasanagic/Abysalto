@@ -3,8 +3,9 @@ package php.automationpractice.gui;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import php.automationpractice.core.commonmethods.PageActions;
 
-public class MyAccountPage extends BasePage{
+public class MyAccountPage extends PageActions {
     private By myAccountHeader = By.cssSelector("h1.page-heading");
     private By womenSection = By.xpath("//a[@title='Women']");
 

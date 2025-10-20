@@ -2,9 +2,11 @@ package php.automationpractice.gui;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import php.automationpractice.core.commonmethods.PageActions;
+
 import static php.automationpractice.core.constants.Constants.*;
 
-public class ProductsPage extends BasePage{
+public class ProductsPage extends PageActions {
     private By sortByWrapper = By.id("uniform-selectProductSort");
     private By sortByDDM = By.id("selectProductSort");
     private By filterOptionBlack = By.id("layered_id_attribute_group_11");
