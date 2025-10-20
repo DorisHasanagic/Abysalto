@@ -6,6 +6,7 @@ import java.util.List;
 import java.util.Random;
 import org.openqa.selenium.WebDriver;
 import php.automationpractice.core.randomgenerator.RandomGenerator;
+import php.automationpractice.core.utility.UserDataStorage;
 
 public class RegistrationPage extends BasePage{
     private By titleRadioButtonMr = By.id("id_gender1");
@@ -74,6 +75,8 @@ public class RegistrationPage extends BasePage{
         selectDay(random.getDay());
         selectMonth(random.getMonth());
         selectYear(random.getYear());
+
+        UserDataStorage.addUser(random);
     }
 
     public MyAccountPage clickRegisterButton(){
