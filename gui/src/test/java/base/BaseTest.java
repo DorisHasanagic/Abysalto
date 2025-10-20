@@ -1,5 +1,6 @@
 package base;
 
+import php.automationpractice.core.utility.UserDataStorage;
 import php.automationpractice.gui.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -31,7 +32,8 @@ public class BaseTest {
     }
 
     @AfterClass
-    public void tearDown(){
+    public void cleanUp() {
+        UserDataStorage.clear();
         driver.quit();
     }
 

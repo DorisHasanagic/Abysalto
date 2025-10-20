@@ -15,4 +15,8 @@ public class UserDataStorage {
     public static List<RandomGenerator> getUsers() {
         return users;
     }
+
+    public static void clear() {
+        users.clear();
+    }
 }
