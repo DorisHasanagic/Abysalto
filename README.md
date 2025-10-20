@@ -7,9 +7,12 @@
     - [Run the Tests](#run-the-tests)
 
 1. ### About The App
-   The "Automation Practice" app is an online app built for automation practice
+   The "Automation Practice" app is an online app built for automation practice.
+   Project structure:
+   Core module contains helper methods, utilities, and shared functionality.
+   GUI module contains page objects, UI components, and test cases.
 
-2. ### Getting Started
+3. ### Getting Started
    #### Prerequisites
    - Java JDK (version 25):
         java -version
