@@ -9,7 +9,7 @@ public class RandomGenerator {
     private String lastName = faker.name().lastName();
     private String password = faker.internet().password();
     private String email = faker.internet().emailAddress();
-    private int day = faker.number().numberBetween(1, 28); // saljemo value opcije, ne vrijednost
+    private int day = faker.number().numberBetween(1, 28);
     private int month = faker.number().numberBetween(1,12);
     private int year = faker.number().numberBetween(1920, 2007);
 

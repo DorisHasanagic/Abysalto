@@ -43,21 +43,6 @@ public class RegistrationPage extends PageActions {
         set(passwordField, password);
     }
 
-//    Metoda prima value od dropdown elementa (day,month,year).
-//    Dohvati dropdown element s find().
-//    Napravi Selenium Select objekt za taj dropdown.
-//    Odaberi opciju prema atributu value (pretvoren u String).
-//
-//    public void selectDay(int day){
-//        WebElement dayElement = find(dateOfBirthDayDDM);
-//        Select select = new Select(dayElement);
-//        select.selectByValue(String.valueOf(day));
-//    }
-//    public void selectMonth(int month){
-//       WebElement monthElement = find(dateOfBirthMonthDDM);
-//       Select select = new Select (monthElement);
-//       select.selectByValue(String.valueOf(month));
-
     public void selectDay(int day){
         selectFromDropdown(dayWrapper, dateOfBirthDayDDM, String.valueOf(day));
     }

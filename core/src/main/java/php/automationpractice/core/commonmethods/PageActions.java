@@ -14,7 +14,7 @@ public class PageActions {
     protected WebDriver driver;
     protected WebDriverWait wait;
 
-    public PageActions(WebDriver driver){       //Svi Page Objecti koji nasljede BasePage imaju konstruktor koji prima WebDriver
+    public PageActions(WebDriver driver){
         this.driver = driver;
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     }
@@ -27,11 +27,11 @@ public class PageActions {
     }
     protected void scrollToElement(By locator){
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        WebElement element = find(locator);  //Locating element and store in variable "element"
+        WebElement element = find(locator);
         js.executeScript("arguments[0].scrollIntoView();", element);
     }
 
-    protected WebElement find(By locator){    // WebElement je tip koji se returna, jer findElement iz Selenium WebDriver vraca WebElement
+    protected WebElement find(By locator){
         return driver.findElement(locator);
     }
 

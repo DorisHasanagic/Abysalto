@@ -20,9 +20,9 @@ public class BaseTest {
 
     @BeforeClass
     public void setUp() {
-        driver = new ChromeDriver();          // inicijalizacija lokalnog WebDriver objekta za test
+        driver = new ChromeDriver();
         driver.manage().window().maximize();
-        driver.get(url);                    //loadanje aplikacije
+        driver.get(url);
 
         pageActions = new PageActions(driver);
         homepage = new HomePage(driver);
